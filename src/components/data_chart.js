@@ -42,7 +42,7 @@ class DataChart extends Component {
     }
 
     callApi() {
-        var url = "http://api.population.io/1.0/population/1980/aged/18/"
+        var url = "https://api.population.io/1.0/population/1980/aged/18/"
         return Request.get(url).then((response) => {
             let data = [];
             let labels = response.body.slice(0, 5).reduce((countries, c) => {
